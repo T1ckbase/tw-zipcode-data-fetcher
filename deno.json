@@ -13,5 +13,6 @@
   "imports": {
     "@b-fuze/deno-dom": "jsr:@b-fuze/deno-dom@^0.1.49",
     "@std/csv": "jsr:@std/csv@^1.0.5"
-  }
+  },
+  "exclude": [".git", "zipcode.csv"]
 }

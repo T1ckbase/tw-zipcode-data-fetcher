@@ -22,7 +22,7 @@ export class ZipCodeDataFetcher {
 
   async fetchAllData(): Promise<ZipCodeData[]> {
     const countys = await this.getCountys();
-    const allData: ZipCodeData[] = [];
+    const allData: ZipCodeData[] = [['郵遞區號', '縣市', '區域', '路名', '段號', '投遞範圍', '大宗段名稱']];
 
     for (let i = 0; i < countys.length; i++) {
       const county = countys[i];
@@ -33,8 +33,6 @@ export class ZipCodeDataFetcher {
 
       allData.push(...data);
     }
-
-    allData.unshift(['郵遞區號', '縣市', '區域', '路名', '段號', '投遞範圍', '大宗段名稱'] as ZipCodeData);
 
     return allData;
   }

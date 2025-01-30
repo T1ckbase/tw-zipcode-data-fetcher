@@ -3,8 +3,8 @@ import { stringify } from '@std/csv/stringify';
 
 // https://www.post.gov.tw/post/internet/Postal/index.jsp?ID=208
 const captcha: Captcha = {
-  key: '90345b0e-5dd5-4df2-ab9d-97b02a04f87b',
-  code: '3443',
+  key: '89e43309-9807-46e2-94ca-67587381f6ae',
+  code: '1525',
 };
 const fetcher = new ZipCodeDataFetcher(captcha);
 const data = await fetcher.fetchAllData();
